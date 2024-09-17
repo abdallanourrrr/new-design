@@ -7,17 +7,22 @@
   /* End Variables */
   /* Start Global Rules */
   * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "work sans", sans-serif;
+    flex-direction: column;
+    max-width: 100%;
     margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    height: 100vh;
   }
   html {
     scroll-behavior: smooth;
-  }
-  body {
-    font-family: "Open Sans", sans-serif;
   }
   ul {
     list-style: none;
@@ -111,6 +116,11 @@
     width: calc(100% - 30px);
     left: 15px;
   }
+  @media (max-width: 767px) {
+    header .container {
+      min-height: 70px;
+    }
+  }
   header .logo img {
     height: 40px;
   }
@@ -120,6 +130,7 @@
     align-items: center;
     justify-content: flex-end;
   }
+
   header nav .toggle-menu {
     color: white;
     font-size: 22px;
@@ -816,6 +827,7 @@
     position: relative;
     width: 500px;
     max-width: 100%;
+    color: lightseagreen;
   }
   .subscribe form i {
     position: absolute;
@@ -830,7 +842,9 @@
     padding: 20px 20px 20px 60px;
     caret-color: var(--main-color);
     width: calc(100% - 130px);
+    color: white;
   }
+
   .subscribe form input[type="submit"] {
     width: 130px;
     background-color: var(--main-color);
@@ -843,6 +857,9 @@
   .subscribe form input[type="email"]:focus,
   .subscribe form input[type="submit"]:focus {
     outline: none;
+  }
+  input[type="email"] {
+    color: white;
   }
   .subscribe form ::placeholder {
     color: white;
