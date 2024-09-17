@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+    <!--
+    external style=ملف خارجي 
+    internal style=ملف داخلي
+    repeat=بتنزل بالصوره لتحت كده 
+    repeat-x=افقي
+    repeat-y=عمودي
+     Background - Attachment;fixed=الصوره بتنزل معاك عشان تشوفها وانت بتنزل لتحت
+    left center =ف النص علي الشمال
+    left bottom=تحت ع الشمال
+    center top=ف النص فوق
+    لو عايز تحرك الصوره هتحركها بالبيكسل px 
+    back grund-size=COVERاوCONTAIN
+    padding= تخلي فيه هوامش بين الكلام من غير اما تفرقو op right bottom left 
+    margin=تخلي الكلام ف النص او اي حته وتخلي الكلام يفرق عن بعضو عكس ال padding
+    border=منها حجم width ومنها color ومنها style solid
+    outline =بتبقي حوالين حواف ال border
+
+    Display - Block, Inline Block, Inline
+    
+    block=...take full width if on width
+    .......add line break
+    .......respect padding margin width height
+    
+    inline=<SPAN>=..do not add line break
+    .......do no respect width height 
+    .......respect padding and margin[just left+right]
+    
+    inlineblock=..respect padding margin width height
+    display non
+    Visibility visible
+     text-align:center ;=تخلي الكلام ف النص text align right يبقي ع اليمين والعكس ف الشمال
+
+      دول عشان نخلي الكلام ف نص الصندوق بالظبط المقاسات :
+       display:inline-block ;
+ margin:20px ;
+ width:100px ;
+ height:50px ;
+ line-height:6;
+  margin: 20px auto ; تخلي الكلام ف النص
+                ..
+                repeat-y=قم بجعل الخلفية تتكرر طوليا فقط
+                repeat-x=قم بجعل الخلفية تتكرر عرضيا فقط
+                Grouping Multiple Selectors=تسهل الدنيا 
+
+                
+                
+Nesting=اهم حاجه ف ال css"""""""""""""
+
+display:inline-block=width:fit content=تخلي الخانه تكون قد الكلام اللي مكتوب جواها
+
+Overflow - Overflow-X And Overflow-Y hidden=بتشيل الزياده اللي ف المحتوي الزايد وممكن تعمل اسكرول
+text overflow ellipsis=بعد اما تقطع الكلام دي بتخلي في نقط كده عشان نعرف ان فيه تكمله
+Shadow=تعمل ظلال للكلام     h-Shadowالظل الافقي  v-Shadowالظل العمودي blurيكون واضح ولا لا Shadow color
+direction rtl=تخلي الكلام بدل ما يبدا من اليمين يبدا من الشمال والعكس
+verticle align =اتجكم ف الصوره سواء اخليها فوق او تحت او ف النصtop bottom middle
+Decoration=تزين يعني تحط خط تحتيه فوقيه ف النص كده
+Transform=بنحول ف التكست نفسه
+text decorition non=تشيل الخط اللي تحت اللينكات
+text transform=تخلي مثلا اول حرف ف الكلام كابتل او اسمول او كلو كابتل او العكس من الاخر تتحكم فيهم
+  text-indent: نحرك السطر كلو يمين او شمال
+
+letter spacing=تخلي  الحروف تبعد او تقرب عن بعضها
+word spacing-=تخلي الكلام يبعد عن بعضو
+line height=للتبعاد السطور عشان يبقي الكلام رايق كده ومريح 
+word break=break all break word متخليش الكلام يطلع بره الweight 
+white-space: nowrap;=تقطع لحد الحته اللي محدد عليها 
+inherit=تورث اي حاجه من ال اب 
+rem*rootاللي هوhtml
+em*ال اب
+vhالطول
+vwالعرض
+font-Variantزي الtext  transform uppercase بس اصغرشويه
+font weight boldتخلي الكلام تقيل كده وولو عايز ارجعو font weight normal
+Cursor pointerيعني تعرفو ان دا click
+Float And Clear
+
+المعادله
+comtemt width is 100%
+5spaces 1% *5=5% from content width
+95% Avalible space
+4 elements the width is 95% /4
+
+Opacity=تقدر تعمل الشفافيه للكلام مع الbackground وكل حاجه
+
+.parent div{
+  text-align: center;
+ background-color: #eee;
+padding-top: 10px;
+padding-bottom: 10px ;
+
+width:calc((100% - 90px) /5);
+float: left;
+margin-left:15px ;
+}
+body{
+  margin:0 ;
+}
+  opacity=تخلي شفافيه اقل حاجه
+Position=relativeاحرك الجمله يمين شمال اي حته بناءا ع نفسه
+position: absolute; 
+position fixed 
+position sticky
+Z-Index=عشان نظبط ال position
+Lists Styling=نشيل النقط الي بتكون موجوده ف الui
+border-spacing:0 ;=يقلل الفرق اللي بين الخانات اللي شبهه الخطوط
+a hover = تخلي اللينك لما تحط الماوس عليه يتغير اللون
+a vissited
+a
+:empty
+selection =تقدر تتحكم ف selection وتغير اللون
+
+  .one::after{
+content:"" ;
+Border Radius=تتحكم ف شكل الكورنر
+
+box shadow
+
+
+
+Box Sizing=تقدر تعدل ع الpadding وال margin وال height والwidht
+ counter-increment: number;=عشان تخلي موجود ارقام بالترتيب فوق الدايره كده بتاعت ال box shadow
+
+ Transition*******************اهم حاجه
+
+ Transition-decuriton=يتنقل ف قد اي
+ Transition dely=يستني قد اي ووبعدين يتنقل
+ transition-property:all ;=نخلي كل اللي ف ال hover يتحرك
+ transition-timing-function:ease ;=يبدا بطيء بعدين يسرع بعدين يرجع بطيء
+ transition-timing-function:linear ;=يمشي بنفسس السرعه
+ transition-timing-function:ease-in ;=يبدا بس بدايه بطيءه
+ transition-timing-function:ease-out ;=عكس ال in يبدا عادي وبطيء ف 
+ transition-timing-function:ease-in-out;=يبدا بطيء وينتهي بطيء 
+ !important
+
+
+ :root{
+    --mainColor: blue;=تقلب كل حاجه لاي لون عايزو
+    fallback عشان لو غلط غ ال maincolorدي تكون بديله
+    mainPadding
+    var
+     text-indent: -2000px;=تطير الكلمه بره خالص
+     display flex=تقدر هنا تستغني عن ال over hidden ووال float left
+     flex direction row= تغير اتجاه ال direction بتاعها 
+     flex direction row reverse= اخلي العناصر تتقلب عكسيا من غير اما اعكس اتجاه الصفحه
+      flex direction colum =تخلي التنظيم عموودي 
+     flex direction colum reverse 
+     flex wrap=تخلي العنصر اللي بعديه يجي عادي عشان ال flex wrap مرن
+     flex-wrap: wrap-reverse;تخلي اخر عنصر او اللي هيجي بعد الاخير يطلع فوق يبقي الاول
+     flexflow[flex direction-flex wrap]
+     Justify Content:flex centre  تخلس العنصر ف النص فوق
+}
+     Align Items تبع ال flex تخلي العنصر ف النص ووتتحكم ف العناصر اللي جوه
+     Align Content تتحكم ف كل حاجه جوا يعني ال items يستحكم فيهم بس بيكون متفرقين دا لا بيكووونو عادي
+     flex grow=العناصر تنمو قد بعض كلهم 
+     flex shrink عكس ال grow يعني دي بتنكمش
+     flex basis
+     flex[flex grow][ flex shrink][flex basis]
+      Align Self تتحكم ف اي واحده تنزلها ا تطلعها
+
+
+          filter: grayscale(100%);يخلي الصوره ابيض واسوود
+             filter: invert(100%);يعكس الصوره
+             filter blur بيعمل باب كده
+             to top 0deg
+             to right 90deg
+             to bottom 180deg
+             to lift  270deg
+             background-image:linear-gradient
+             Caret Color
+             contenteditable="true"يقدر يعدل ع ال p
+             Pointer Eventsتلغي اي ewnt علي اي عنصر
+             grid temlate columns =تقسيمه الاعمده
+    frالفركشن جريدي  يعني طماع
+auto شايلد يعني خجول
+row gab اللي بين الصفوف
+ columns gab   اللي بين الاعمده
+ grid temlate areas
+ grid temlate rows
+ grid column =start end=نخلي مثلا الواد باخد من 1لحد5 بالعرض 
+ grid row =start end=نخلي مثلا الواد باخد من 1لحد5 بالطول
+ grid row startيبدا من انهو صف 
+ grid column startيبدا من انهو  حته ف الصف
+ grid area تقسم تقسيمه حلوه كده
+ Transform - Scale x =نحرك العنصر عرضي كده
+ Transform - Scale y =نحرك العنصر طولي كده
+ Transform - Rotate=نلف العنصر ناحيه اليمين او الشمال
+ 1turn يلف لفه كامله
+
+Transform - Skew =بيعمل انحراف للعنصر كده
+Transform - Matrix بيعمل كل حاجه [Scale x..Skewy Skewx Scale y tranlatex translatey]
+Transform - Origin 0 0 يلف فوق ع الشمال
+rotate 3d
+tranaslaate3d [x y z]
+{Transform rotatx 90deg
+Transform origin left top   هيديك شكل حلو}
+Perspective دا هنديه للاب عشان نروح ندي لل الابن TRANSLATE Z
+    transform-style: preserve-3d; مهم تحطو لما تيجي تعمل اي   3d
+       perspective: 300px;عشان تعمل شكل ال3d
+Animation - KeyFrames, Name, Duration
+Animation - Iteration Count, Timing Function, Spinner Loading
+Iteration Count infinite=يفضل يلف كده كتير
+Animation - Direction, Fill Mode, Play State, Delay
+Animation - Direction alternate =تلف قدام وترج تلف ورا بتعمل زي اكنها بتحمل كده
+animition Fill Mode forword=بيقف عند اخر keyframs
+input[type="checkbox"]:checked + label{
+  color: red;
+  div:empty{
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);تعمل انعكاس حلو اوي 
+  box-shadow: 0 0 5px #03e9f4, 0 0 15px #03e9f4, 0 0 25px #03e9f4, 0 0 100px #03e9f4;
+  initial  بترجع الكلمه زي مكانت
+  object-fit:cover; بتخلصي الصوره واخده ابعاد والحجم كويس
+} 
+  max width 100% يحجم الكلام انو ميطلعشي بره الخلفيه
+  :root{
+    --main-color:#10cab7;
+    --secondary-color:#2c4755;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    }
+    *{
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+     
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body{
+        font-family: "work sans", sans-serif;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        margin: 0 auto;
+        height:  100vh;
+    }
+
+}
+
+
+    
+-->
+<meta charset="UTF-8" />
+<title>css</title>
+<link rel="stylesheet" href="css/master.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<body>
+  <div class="header">
+    <div class="container">
+    <img class="logo" src="logo.png" alt="">
+    <div class="links">
+    <span class="icon">
+    <span></span>
+    <span></span>
+    <span></span>
+    </span>
+    <ul>
+    <li><a href="#services">services</a></li>  
+    <li><a href="#portfolio"> portfolio</a></li>  
+    <li><a href=" #about"> about</a></li>  
+    <li><a href=" #contact">contact </a></li>  
+    </ul>
+    </div>
+    </div>
+    </div>
+    <!--start landing section-->
+    <div class="landing">
+    <div class="intro-text">
+    <h1> Hello There</h1>
+    <p>we are leon - super creative & minimal agency web template </p>
+    </div>
+    </div>
+    <!--end landing section-->
+     <!--start features-->
+     <div class="features">
+      <div class="container">
+        <div class="feat">
+          <i class="fas fa-magic fa-2x" aria-hidden="true"></i>
+          <h3>tell us your idea</h3>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab</p>
+        </div>
+        <div class="feat">
+          <i class="far fa-gem fa-2x" aria-hidden="true"></i>
+          <h3>we will do all the work</h3>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab</p>
+      </div>
+      <div class="feat">
+        <i class="fas fa-globe-asia fa-2x" aria-hidden="true"></i>
+        <h3>your product is worldwide</h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut lab</p>
+    </div>
+      </div>
+     </div>
+      <!--end features-->
+     <!--start services--> 
+     <div class="services" id="services">
+    <div class="container">
+    <h2 class="special-heading">services</h2>
+    <p> Don't be busy, be productive </p>
+    <div class="services-content">
+      <div class="col">
+        <!--start service-->
+        <div class="srv">
+    <i class="fas fa-palette fa-2x"></i>
+    <div class="text">
+    <h3> Graphic design</h3>
+    <p> Graphic design is the process of visual communication and problem-solving using one or more of typography, photography and illustration.</p>
+    </div>
+        </div>
+        <div class="srv">
+    <i class="fab fa-sketch fa-2x"></i>
+    <div class="text">
+    <h3> UI & UX</h3>
+    <p> Process of enhancing user satisfaction with a product by improving the usability, accessibility, and pleasure provided in the interaction.</p>
+    </div>
+        </div>
+        <!--end service-->
+      </div>
+      <div class="col">
+        <!--start service-->
+        <div class="srv">
+    <i class="fas fa-vector-square fa-2x"></i>
+    <div class="text">
+    <h3>Web design</h3>
+    <p> Web design encompasses many different skills and disciplines in the production and maintenance of websites.</p>
+    </div>
+        </div>
+        <div class="srv">
+    <i class="fas fa-pencil-ruler fa-2x"></i>
+    <div class="text">
+    <h3>Web development</h3>
+    <p> Web development is a broad term for the work involved in developing a web site for the Internet or an intranet.</p>
+    </div>
+        </div>
+        <!--end service-->
+      </div>
+      <div class="col">
+        <div class="image image-column">
+    <img src="OIP.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+     </div>
+     <!--end services-->
+     <!--start portfolio-->
+     <div class="portfolio" id="portfolio">
+<div class="container">
+<h2 class="special-heading">portfolio</h2>
+<p> if you do it right, it will last forever</p>
+<div class="portfolio-content">
+<div class="col">
+<img src="portfolio-1.jpg" alt="">
+<div class="info">
+<h3> project here</h3>
+<p> My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+</div>
+</div>
+<div class="col">
+<img src="portfolio-2.jpg" alt="">
+<div class="info">
+<h3> project here</h3>
+<p> My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+</div>
+</div>
+<div class="col">
+<img src="portfolio-3.jpg" alt="">
+<div class="info">
+<h3> project here</h3>
+<p> My creative ability is very difficult to measure because it can manifest in so many surprising and.</p>
+</div>
+</div>
+</div>
+</div>
+     </div>
+     <!--end portfolio-->
+     <!--start about-->
+     <div class="about" id="about">
+      <div class="container">
+      <h2 class="special-heading">About</h2>
+      <p> Less is more work</p>
+      <div class="about-content">
+<div class="image">
+<img src="about.jpg" alt="">
+</div>
+<div class="text">
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit a exercitationem asperiores? Aliquid natus doloremque numquam delectus temporibus quo deserunt magnam impedit, odio distinctio harum tempora, neque aspernatur nesciunt at!</p>
+<hr>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, eos cupiditate? Fugiat expedita, non, odio nulla nobis, impedit distinctio dolorem libero possimus minus sint. Eos porro sequi doloremque animi reiciendis?</p>
+ 
+</div>
+   </div>
+      </div>
+               </div>
+     <!--end about-->
+     <!--start contact-->
+     <div class="contact" id="contact">
+      <div class="container">
+        <h2 class="special-heading">Contact</h2>
+        <p> We are born to create</p>
+        <div class="info">
+        <p
+        class="lable"> Feel free to drop us a line at:</p>
+        <a class="link" href=" mailto:leonagency@mail.com?subject=contact"> leonagency@mail.com</a>
+        <div class="social">
+          Find Us On Social Networks
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+        </div>
+      </div>
+     </div>
+     <!--end contact-->
+     <!--start footer-->
+     <div class="footer">
+      &copy; 2021 <span>Leon</span> All Right Reserved
+      
+     </div>
+     <!--end footer-->
+</body>
+
+</head>
+
+
+</html>
